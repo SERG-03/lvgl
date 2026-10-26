@@ -6,6 +6,10 @@
 /*********************
  *      INCLUDES
  *********************/
+#ifdef _WIN32
+    #undef __STRICT_ANSI__
+    #include <malloc.h>
+#endif
 
 /* for aligned_alloc */
 #ifndef __USE_ISOC11
